@@ -1,0 +1,17 @@
+version: '2'
+services:
+  db:
+    image: redis:3.0-alpine
+  api:
+    image: beverts312/backend
+    ports:
+      - "80:80"
+    environment:
+      REDIS_URL: db
+      REDIS_PORT: 6379
+    depends_on:
+      - db
+  web:
+    image: beverts312/frontend
+    ports:
+      - "81:80"
