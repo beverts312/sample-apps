@@ -14,8 +14,9 @@ export class GithubService {
 
     getIssues(user: string, repo: string, days: number): Promise<GithubIssue[]> {
         let date = new Date();
+        date.setDate(date.getDate() - 7);
         const uriPath = config.userPaths.issuesUri.replace('##USER##', config.user).replace('##REPO##', config.repo)
-        const params = "?since=" + date.setDate(date.getDate() - 7).toString(); 
+        const params = "?since=" + date.toISOString(); 
         let url = config.baseUri + uriPath + params
         return this.http
             .get(url)

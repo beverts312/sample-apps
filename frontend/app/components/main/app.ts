@@ -24,6 +24,7 @@ export class AppComponent {
 
   ngOnInit() {
     this.githubService.getIssues(this.user, this.repo, 7).then(issues => this.issues = issues);
+    alert(this.issues);
   }
 
 }

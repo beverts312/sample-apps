@@ -2,9 +2,10 @@
     "version": "0.1.0",
     "configurations": [
         {
-            "name": "Launch localhost with sourcemaps",
+            "name": "Attatch localhost with sourcemaps",
+            "runtimeExecutable": "chromium-browser",
             "type": "chrome",
-            "request": "launch",
+            "request": "attatch",
             "url": "http://localhost:3000/",
             "webRoot": "${workspaceRoot}",
             "sourceMaps": true,

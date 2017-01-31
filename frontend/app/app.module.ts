@@ -8,15 +8,14 @@ import { AppComponent } from './components/main/app';
 
 import { GithubService } from './services/github';
 
-//import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    // InMemoryWebApiModule.forRoot(InMemoryDataService),
-    //  AppRoutingModule
+    AppRoutingModule
   ],
   declarations: [
     AppComponent

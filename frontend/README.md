@@ -9,10 +9,6 @@ Manual Way To Build/Run the Web app:
 2. Run `npm install` to install dependencies  
 3. Run `npm run start` to transpile code, start the app, and open your browser  
 
-### IDE  
-If you have [Visual Studio Code](http://code.visualstudio.com/) with the [Chrome Debugger](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) 
-extension installed and configured, you can follow steps 1-3 above to transpile, and then hit `F5` to debug.  
-
 ## Run with Docker  
 Prerequisites: [Docker](https://docs.docker.com/engine/installation/), [Docker Compose](https://github.com/docker/compose/releases), [Node.Js](https://nodejs.org/en/download/), [npm](https://www.npmjs.com/) (on most operating systems this comes with Node.js)  
 
