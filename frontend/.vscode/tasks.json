@@ -1,0 +1,46 @@
+{
+	"version": "0.1.0",
+	"command": "cmd",
+	"isShellCommand": true,
+	"showOutput": "silent",
+	"args": [
+		"/c"
+	],
+	"tasks": [
+		{
+			"taskName": "package install",
+			"suppressTaskName": true,
+			"args": [
+				"npm",
+				"install"
+			]
+		},
+		{
+			"taskName": "build",
+			"args": [
+				"npm",
+				"run",
+				"tsc"
+			],
+			"problemMatcher": "$tsc",
+			"isBuildCommand": true
+		},
+		{
+			"taskName": "clean",
+			"suppressTaskName": true,
+			"args": [
+				"npm",
+				"run",
+				"clean"
+			]
+		},
+		{
+			"taskName": "start",
+			"suppressTaskName": true,
+			"args": [
+				"npm",
+				"start"
+			]
+		}
+	]
+}

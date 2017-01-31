@@ -1,4 +1,5 @@
 All instructions assume you have cloned this repo (`git clone https://github.com/beverts312/sample-apps.git`)  
+Both apps have been built and tested on Ubuntu 16.04 & Windows 10. They should work just fine on a MAC as well.  
 
 ## Build the Code yourself  
 [Backend Instructions](./backend/README.md) - Notes API  
