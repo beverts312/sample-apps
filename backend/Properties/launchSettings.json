@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "WebAPIApplication": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "http://localhost/api/notes",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

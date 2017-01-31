@@ -1,0 +1,13 @@
+version: '2'
+services:
+  db:
+    image: redis:3.0-alpine
+  web:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      REDIS_URL: db
+      REDIS_PORT: 6379
+    depends_on:
+      - db
