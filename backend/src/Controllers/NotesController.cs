@@ -4,14 +4,19 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 using WebAPIApplication.Models;
+using WebAPIApplication.Interfaces;
 
 namespace WebAPIApplication.Controllers
 {
     [Route("api/[controller]")]
     public class NotesController : Controller
     {
-        private NoteAccess noteAccess = new NoteAccess();
+        private INoteAccess noteAccess;
 
+        public NotesController(INoteAccess access)
+        {
+            noteAccess = access;
+        }
         // GET api/notes
         [HttpGet]
         public async Task<IEnumerable<Note>> Get([FromQueryAttribute]string query)

@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
+using WebAPIApplication.Interfaces;
+
 namespace WebAPIApplication
 {
     public class Startup
@@ -27,6 +29,7 @@ namespace WebAPIApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<INoteAccess, NoteAccess>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)

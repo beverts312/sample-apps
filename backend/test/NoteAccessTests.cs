@@ -1,6 +1,7 @@
 using Xunit;
 using WebAPIApplication.Models;
 using WebAPIApplication;
+using Moq;
 
 namespace Tests
 {

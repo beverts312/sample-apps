@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 using StackExchange.Redis;
 
 using WebAPIApplication.Models;
+using WebAPIApplication.Interfaces;
 
 namespace WebAPIApplication
 {
-    public class NoteAccess
+    public class NoteAccess : INoteAccess
     {
         private ConnectionMultiplexer redis;
         private IDatabase db;
