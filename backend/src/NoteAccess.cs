@@ -6,6 +6,8 @@ using System.Net;
 using System.Threading.Tasks;
 using StackExchange.Redis;
 
+using WebAPIApplication.Models;
+
 namespace WebAPIApplication
 {
     public class NoteAccess

@@ -3,10 +3,10 @@ This Notes API is written using .Net Core and will run on all platforms. It uses
 
 ## Run without Docker  
 Prerequisites: [.Net CLI](https://www.microsoft.com/net/core)  
-1. Navigate to this Directory  
+1. Navigate to the `$repo_root/backend/src` Directory  
 2. Run `dotnet restore` to install dependencies  
 3. Run `dotnet build` to compile the code  
-4. Run `dotnet start` to start the Application on port 5000  
+4. Run `dotnet run` to start the Application on port 5000  
 
 If you want to start the application on port 80 you will likely need admin permissions: `sudo dotnet run --server.urls http://*`  
   
@@ -27,3 +27,5 @@ To kill the containers and remove them run:
 docker-compose -f FILE_YOU_STARTED_WITH kill  
 docker-compose -f FILE_YOU_STARTED_WITH rm -f
 ```  
+
+## Run Unit Tests

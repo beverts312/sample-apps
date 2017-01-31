@@ -2,15 +2,12 @@
     "version": "0.1.0",
     "command": "dotnet",
     "isShellCommand": true,
-    "options": {
-        "cwd": "src"
-    },
     "args": [],
     "tasks": [
         {
             "taskName": "build",
             "args": [
-                "${workspaceRoot}/src/project.json"
+                ""
             ],
             "isBuildCommand": true,
             "problemMatcher": "$msCompile"

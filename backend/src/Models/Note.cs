@@ -1,4 +1,4 @@
-namespace WebAPIApplication
+namespace WebAPIApplication.Models
 {
     public class Note
     {
