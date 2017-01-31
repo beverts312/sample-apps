@@ -6,8 +6,8 @@ The only values that can be configured are the `REDIS_URL` and `REDIS_PORT`. I h
 You can overwrite the default values by setting them as environmental variables.  
 
 ## Run without Docker  
-Prerequisites: [.Net CLI](https://www.microsoft.com/net/core)  
-
+Prerequisites: [.Net CLI](https://www.microsoft.com/net/core) - I would reccomend the latest version  
+  
 Fast way (Mac/Linux):  
 1. Navigate to `$repo_root/backend`  
 2. Run `./start.sh` to install dependencies, build projects, run tests, start api
@@ -28,7 +28,7 @@ If you have [Visual Studio Code](http://code.visualstudio.com/) with the [C#](ht
 extension installed you can simply open this folder in code and it `F5` to start debugging the application.  
 
 ## Run with Docker  
-Prerequisites: [Docker](https://docs.docker.com/engine/installation/), [Docker Compose](https://github.com/docker/compose/releases)  
+Prerequisites: [Docker](https://docs.docker.com/engine/installation/) (1.12+), [Docker Compose](https://github.com/docker/compose/releases)(1.10)  
 
 I have provided 2 compose files([cloud.yml](./cloud.yml),[local.yml](./local.yml), both of them build the image and map port 80 of the container to port 80 of the machine the compose file run on. 
 
