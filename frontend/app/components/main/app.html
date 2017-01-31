@@ -1,0 +1,25 @@
+<div>
+	<div class="group-container">
+		<div class="group-heading"> {{user}}/{{repo}} Issues</div>
+		<div>Issues retrieved using the Github API</div>
+		<div *ngFor="let issue of issues">
+			<div class="issue-container">
+				<div class="issue-heading heading-element"><a href="{{issue.url}}">{{issue.name}}</a></div>
+				<table>
+					<tr>
+						<td class="project-col">Description:</td>
+						<td>{{issue.body}}</td>
+					</tr>
+					<tr>
+						<td class="project-col">Labels:</td>
+						<td>
+							<span *ngFor="let item of issue.labels; let isLast=last">
+   								{{item}}{{isLast ? '' : ', '}}
+							</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

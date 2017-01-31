@@ -1,0 +1,25 @@
+.group-container {
+    margin-bottom: 30px;
+}
+
+.heading-element {
+    display: inline;
+}
+
+.project-container {
+    margin: 10px 0 20px 0;
+}
+
+.group-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-heading {
+    font-weight: bold;
+    font-size: 20px;    
+}
+
+.project-col {
+    padding-right: 10px;
+}
