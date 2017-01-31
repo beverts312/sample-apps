@@ -6,7 +6,8 @@
         "xunit": "2.2.0-beta2-build3300",
         "Moq": "4.6.38-alpha",
         "Microsoft.DotNet.InternalAbstractions": "1.0.0",
-        "src": "1.0.0"
+        "src": "1.0.0",
+        "StackExchange.Redis": "1.2.0"
     },
     "frameworks": {
         "netcoreapp1.1": {

@@ -57,6 +57,7 @@ namespace Tests
             Assert.Equal(res.id, note.id);
             Assert.Equal(res.body, note.body);
         }
+        
         private IEnumerable<Note> GetNotes()
         {
             return new List<Note>(){

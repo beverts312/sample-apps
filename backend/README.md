@@ -16,8 +16,16 @@ the `REDIS_URL` and `REDIS_PORT` environmental variables to point to your redis 
 If you have [Visual Studio Code](http://code.visualstudio.com/) with the [C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) 
 extension installed you can simply open this folder in code and it `F5`.  
 
+### Run Unit Tests  
+Prerequisites: You build the API locally
+1. Navigate to the `$repo_root/backend/test` Directory  
+2. Run `dotnet restore` to install dependencies  
+3. Run `dotnet test` to run the unit tests  
+
 ## Run with Docker  
 Prerequisites: [Docker](https://docs.docker.com/engine/installation/), [Docker Compose](https://github.com/docker/compose/releases)  
+
+I have provided 2 compose files([cloud.yml](./cloud.yml),[local.yml](./local.yml), both of them build the image and map port 80 of the container to port 80 of the machine the compose file run on. 
 
 To run with my RedisLab hosted redis run: `docker-compose -f cloud.yml up -d`  
 To run with Redis in a container run: `docker-compose -f local.yml up -d`  
@@ -28,4 +36,4 @@ docker-compose -f FILE_YOU_STARTED_WITH kill
 docker-compose -f FILE_YOU_STARTED_WITH rm -f
 ```  
 
-## Run Unit Tests
+

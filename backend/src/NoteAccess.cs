@@ -13,7 +13,7 @@ namespace WebAPIApplication
 {
     public class NoteAccess : INoteAccess
     {
-        private ConnectionMultiplexer redis;
+        private IConnectionMultiplexer redis;
         private IDatabase db;
         private IServer server;
         private string indexKey = "nextIndex";
@@ -25,6 +25,13 @@ namespace WebAPIApplication
         {
             UpdateConfig();
             InitializeDb().Wait();
+        }
+
+        public NoteAccess(IConnectionMultiplexer redisMock, IDatabase dbMock, IServer serverMock)
+        {
+            redis = redisMock;
+            db = dbMock;
+            server = serverMock;
         }
 
         public async Task<Note> AddNote(string note)
@@ -73,6 +80,7 @@ namespace WebAPIApplication
         }
         private async Task InitializeDb()
         {
+
             var dns = await Dns.GetHostAddressesAsync(redisUrl);
             var redisIp = dns.First().MapToIPv4().ToString();
             var connectionString = String.Format("{0}:{1}", redisIp, redisPort);
