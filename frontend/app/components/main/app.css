@@ -1,22 +1,3 @@
-
-.heading-element {
-    display: inline;
-}
-
-.issue-container {
-    margin: 10px 0 20px 0;
-}
-
-.group-heading {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.issue-heading {
-    font-weight: bold;
-    font-size: 20px;    
-}
-
 .issue-col {
     padding-right: 10px;
 }

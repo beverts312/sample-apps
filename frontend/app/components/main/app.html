@@ -2,28 +2,26 @@
 	<h1>{{user}}/{{repo}} Issues<small>Powered by Github</small></h1>
 </div>
 <div>
-	<div class="group-container">
-		<div *ngFor="let item of currentPageIssues; let i = index; trackBy: trackByFn">
-			<div class="panel panel-default">
-				<div class="panel-heading" (click)="toggleVisible(i)">{{item.title}}</div>
-				<div class="panel-body" [hidden]="!item.visible">
-					<table>
-						<tr>
-							<td class="issue-col">Description:</td>
-							<td>
-								<div [innerHTML]="item.body"></div>
-							</td>
-						</tr>
-						<tr>
-							<td class="issue-col">User:</td>
-							<td>{{item.user}}</td>
-						</tr>
-						<tr>
-							<td class="issue-col">Assignee:</td>
-							<td>{{item.assignee}}</td>
-						</tr>
-					</table>
-				</div>
+	<div *ngFor="let item of currentPageIssues; let i = index; trackBy: trackByFn">
+		<div class="panel panel-default">
+			<div class="panel-heading" (click)="toggleVisible(i)">{{item.title}}</div>
+			<div class="panel-body" [hidden]="!item.visible">
+				<table>
+					<tr>
+						<td class="issue-col">Description:</td>
+						<td>
+							<div [innerHTML]="item.body"></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="issue-col">User:</td>
+						<td>{{item.user}}</td>
+					</tr>
+					<tr>
+						<td class="issue-col">Assignee:</td>
+						<td>{{item.assignee}}</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</div>
