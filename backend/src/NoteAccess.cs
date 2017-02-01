@@ -54,7 +54,7 @@ namespace WebAPIApplication
 
         public async Task<IEnumerable<Note>> RetrieveNotes()
         {
-            var noteIds = server.Keys(pattern: notesPrefix + "*");
+            var noteIds = server.Keys(0, notesPrefix + "*", 10, CommandFlags.None);
             var tasks = noteIds.Select(id => RetrieveNoteRaw(id.ToString())).ToList();
             return await Task.WhenAll(tasks);
         }
