@@ -25,6 +25,14 @@ export class GithubService {
             .catch(this.handleError);
     }
 
+    getMarkdownHtmlFromString(markdown: string): Promise<string> {
+        let url = config.baseUri + config.markdownPath;
+        return this.http
+            .post(url, { text: markdown })
+            .toPromise()
+            .then(res => res.text())
+            .catch(this.handleError);
+    }
 
     handleError(err: Error): void {
         console.log(err.message);

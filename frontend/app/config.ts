@@ -5,6 +5,7 @@ const githubService = {
         reposUri: '/repos',
         issuesUri: '/repos/##USER##/##REPO##/issues'
     },
+    markdownPath: '/markdown',
     user: 'angular',
     repo: 'angular'
 };

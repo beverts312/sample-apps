@@ -1,12 +1,9 @@
-.group-container {
-    margin-bottom: 30px;
-}
 
 .heading-element {
     display: inline;
 }
 
-.project-container {
+.issue-container {
     margin: 10px 0 20px 0;
 }
 
@@ -15,11 +12,11 @@
     margin-bottom: 10px;
 }
 
-.project-heading {
+.issue-heading {
     font-weight: bold;
     font-size: 20px;    
 }
 
-.project-col {
+.issue-col {
     padding-right: 10px;
 }
