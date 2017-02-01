@@ -6,7 +6,7 @@ The only values that can be configured are the `REDIS_URL` and `REDIS_PORT`. I h
 You can overwrite the default values by setting them as environmental variables.  
 
 ## Run without Docker  
-Prerequisites: [.Net CLI](https://www.microsoft.com/net/core) (1.1.0) 
+Prerequisites: [.Net CLI](https://www.microsoft.com/net/download/core#/current) (1.1.0) 
   
 Fast way (Mac/Linux):  
 1. Navigate to `$repo_root/backend`  
