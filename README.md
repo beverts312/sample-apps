@@ -6,7 +6,7 @@ Both apps have been built and tested on Ubuntu 16.04 & Windows 10. They should w
 [Frontend Instructions](./frontend/README.md) - Angular Issue Search  
 
 ## Run Prebuilt Code using Docker  
-As an alternate option to building the code locally, you can run prebuild docker images using the [docker-compose.yml](./docker-compose.yml).  
+As an alternate option to building the code locally, you can run prebuilt docker images using the [docker-compose.yml](./docker-compose.yml).  
 First you must install [Docker](https://docs.docker.com/engine/installation/) (1.12+) and [Docker Compose](https://github.com/docker/compose/releases) (1.10).  
 Then navigate to the directory you cloned this repo and run `docker-compose up -d`  
 The API will be running on port 80 and the Frontend App will be running on 81.  
