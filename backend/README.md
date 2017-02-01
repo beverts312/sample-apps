@@ -30,7 +30,7 @@ extension installed you can simply open this folder in code and it `F5` to start
 ## Run with Docker  
 Prerequisites: [Docker](https://docs.docker.com/engine/installation/) (1.12+), [Docker Compose](https://github.com/docker/compose/releases)(1.10)  
 
-I have provided 2 compose files([cloud.yml](./cloud.yml),[local.yml](./local.yml), both of them build the image and map port 80 of the container to port 80 of the machine the compose file run on. 
+I have provided 2 compose files([cloud.yml](./cloud.yml),[local.yml](./local.yml)), both of them build the image and map port 80 of the container to port 80 of the machine the compose file run on. 
 
 To run with my RedisLab hosted redis run: `docker-compose -f cloud.yml up -d`  
 To run with Redis in a container run: `docker-compose -f local.yml up -d`  

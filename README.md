@@ -3,7 +3,7 @@ Both apps have been built and tested on Ubuntu 16.04 & Windows 10. They should w
 
 ## Build the Code yourself  
 [Backend Instructions](./backend/README.md) - Notes API  
-[Frontend Instructions](./frontend/README.md) - Angular Issue Search (In Progress)  
+[Frontend Instructions](./frontend/README.md) - Angular Issue Search  
 
 ## Run Prebuilt Code using Docker  
 As an alternate option to building the code locally, you can run prebuild docker images using the [docker-compose.yml](./docker-compose.yml).  
