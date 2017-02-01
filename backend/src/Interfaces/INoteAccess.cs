@@ -1,10 +1,5 @@
-using System;
-using System.Text;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Threading.Tasks;
-using StackExchange.Redis;
 
 using WebAPIApplication.Models;
 

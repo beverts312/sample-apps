@@ -1,5 +1,4 @@
 using System;
-using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -78,6 +77,7 @@ namespace WebAPIApplication
                 redisPort = Convert.ToInt32(port);
             }
         }
+
         private async Task InitializeDb()
         {
 
@@ -93,7 +93,6 @@ namespace WebAPIApplication
                 await db.StringSetAsync(indexKey, BuildIndex("1"));
             }
         }
-
 
         private async Task<Note> RetrieveNoteRaw(string id)
         {

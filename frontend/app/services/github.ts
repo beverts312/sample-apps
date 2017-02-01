@@ -16,7 +16,7 @@ export class GithubService {
         let date = new Date();
         date.setDate(date.getDate() - 7);
         const uriPath = config.userPaths.issuesUri.replace('##USER##', config.user).replace('##REPO##', config.repo)
-        const params = "?since=" + date.toISOString(); 
+        const params = "?since=" + date.toISOString();
         let url = config.baseUri + uriPath + params
         return this.http
             .get(url)

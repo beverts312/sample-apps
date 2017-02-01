@@ -4,6 +4,5 @@ namespace WebAPIApplication.Models
     {
         public int id { get; set; }
         public string body { get; set; }
-
     }
 }

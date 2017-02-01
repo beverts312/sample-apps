@@ -17,6 +17,7 @@ namespace WebAPIApplication.Controllers
         {
             noteAccess = access;
         }
+        
         // GET api/notes
         [HttpGet]
         public async Task<IEnumerable<Note>> Get([FromQueryAttribute]string query)

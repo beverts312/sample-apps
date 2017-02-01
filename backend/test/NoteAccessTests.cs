@@ -4,7 +4,6 @@ using Moq;
 using StackExchange.Redis;
 using System.Linq;
 using System.Collections.Generic;
-using WebAPIApplication.Models;
 using WebAPIApplication;
 
 namespace Tests
